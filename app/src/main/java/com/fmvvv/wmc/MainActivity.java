@@ -74,10 +74,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int AL = 0; //全体の長さ
     private int MB = 0; //一小節
 
+    private int RANDN = 1113;
+
     //乱数
     private int R1 = 9; //選音 7 + 休符の数
     private int R2 = 2; //加速度、磁気の選択
-    private int R3 = 4; //音長用
+    private int R3 = 4; //音価用
     private int R4 = 5; //メロディパターン用
     private int R5 = 6; //スケール
     private int R6 = 12; //ルート音
@@ -390,12 +392,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 GenerateState = true;
                 StartButton.setText("STOP");
                 Generating.setVisibility(View.VISIBLE);
+/*
                 TL.SetLR(R3,presValues[0]);
                 SN.SetNR(presValues[0]);
                 MP.SetMR(R4,presValues[0]);
                 RT.SetRR(R6,presValues[0]);
                 SL.SetSR(R5,presValues[0]);
                 OT.SetOR(R7,presValues[0]);
+*/
+                TL.SetLR(R3,RANDN);
+                SN.SetNR(RANDN);
+                MP.SetMR(R4,RANDN);
+                RT.SetRR(R6,RANDN);
+                SL.SetSR(R5,RANDN);
+                OT.SetOR(R7,RANDN);
                 first1 = true;
                 first2 = true;
                 Log.d("hoge","started");

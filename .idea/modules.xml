@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WMC.iml" filepath="$PROJECT_DIR$/WMC.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/walk_midi.iml" filepath="$PROJECT_DIR$/walk_midi.iml" />
     </modules>
   </component>
 </project>
