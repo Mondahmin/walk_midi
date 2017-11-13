@@ -606,6 +606,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onResume() {
         super.onResume();
+/*
         List<Sensor> sensors = SenManager.getSensorList(Sensor.TYPE_ALL);
         for (Sensor sensor : sensors) {
             int type = sensor.getType();
@@ -644,14 +645,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 SenManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
                 stepEnabled = true;
             }
-/*
             //近接センサのリスナ登録
             if (type == Sensor.TYPE_PROXIMITY) {
                 SenManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
                 prxEnabled = true;
             }
-*/
         }
+*/
     }
 
     protected void onPause() {
