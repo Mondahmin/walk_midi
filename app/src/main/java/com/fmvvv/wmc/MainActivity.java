@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int AL = 0; //全体の長さ
     private int MB = 0; //一小節
 
-    private int RANDN = 1113;
+    private int RANDN = 1115;
 
     //乱数
     private int R1 = 9; //選音 7 + 休符の数
